@@ -3,4 +3,3 @@ media/
 venv/
 __pyache__
 django.log
-staticfiles
