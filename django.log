@@ -1,0 +1,60 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Aug  5 04:45:10 2021] ***
+compiled with version: 7.5.0 on 05 August 2021 04:42:25
+os: Linux-5.4.0-1045-aws #47~18.04.1-Ubuntu SMP Tue Apr 13 15:58:14 UTC 2021
+nodename: ip-172-31-2-4
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/www/moodmaker
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/www/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/www/moodmaker
+your processes number limit is 3800
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/www/moodmaker/uwsgi.sock fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+Set PythonHome to /home/ubuntu/www/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5577d28db730
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5577d28db730 pid: 17663 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17663)
+spawned uWSGI worker 1 (pid: 17665, cores: 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Aug  5 05:06:03 2021] ***
+compiled with version: 7.5.0 on 05 August 2021 04:42:25
+os: Linux-5.4.0-1045-aws #47~18.04.1-Ubuntu SMP Tue Apr 13 15:58:14 UTC 2021
+nodename: ip-172-31-2-4
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/www/moodmaker
+writing pidfile to /tmp/project-master.pid
+detected binary path: /home/ubuntu/www/moodmaker/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/www/moodmaker
+your processes number limit is 3800
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/www/moodmaker/uwsgi.sock fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+Set PythonHome to /home/ubuntu/www/moodmaker/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557a52154760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557a52154760 pid: 18569 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18569)
+spawned uWSGI worker 1 (pid: 18571, cores: 1)
