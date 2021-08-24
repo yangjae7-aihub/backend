@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/ls
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-24osrr4bpyyp75a$$s9h5c9i0&ug)vq37cv!z=zophy@-l7z95'
@@ -39,9 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'diary_app',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -50,6 +52,16 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+#CORS cofiguration
+CORS_ORIGIN_ALLOW_ALL = True
+
+# CORS_ORIGIN_WHITELIST = ['http://127.0.0.1:3000' ,'http://localhost:3000'] 
+# for production
+
+CORS_ALLOW_CREDENTIALS = True
+
+# cf) https://blog.thereis.xyz/41, https://hyeonyeee.tistory.com/65
 
 ROOT_URLCONF = 'moodmaker.urls'
 
