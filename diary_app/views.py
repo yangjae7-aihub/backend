@@ -8,6 +8,7 @@ from rest_framework import generics
 # Create your views here.
 class ImageUploadList(generics.ListCreateAPIView):
     # permission_classes = [IsAuthenticated]
+    parser_classes = [MultiPartParser]
     queryset = ImageUpload.objects.all()
     serializer_class = ImageUploadSerializer
 # https://www.django-rest-framework.org/api-guide/parsers/#api-reference
