@@ -2,5 +2,6 @@ db.sqlite3
 /media
 /staticfiles/media
 /venv
-__pyache__/
+__pycache__/
+/__pycache__
 django.log
