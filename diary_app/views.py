@@ -10,7 +10,11 @@ class ImageUploadList(generics.ListCreateAPIView):
     # permission_classes = [IsAuthenticated]
     queryset = ImageUpload.objects.all()
     serializer_class = ImageUploadSerializer
+# https://www.django-rest-framework.org/api-guide/parsers/#api-reference
+# when done with 'form-data' with Postman, worked fine
 
+# https://stackoverflow.com/questions/46965670/how-to-use-multipartparser-in-django-rest-framework
+# manually config parser class
     
 class ImageUploadDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = ImageUpload.objects.all()
